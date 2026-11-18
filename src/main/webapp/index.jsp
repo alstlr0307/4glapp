@@ -91,7 +91,7 @@
  
                 	try {
                         Class.forName("org.mariadb.jdbc.Driver");
-                    	conn = DriverManager.getConnection("jdbc:mariadb://13.124.241.176:3306/boarddb", "boarduser", "1234");
+                    	conn = DriverManager.getConnection("jdbc:mariadb://10.0.12.72:3306/boarddb", "boarduser", "1234");
  
                     	String sql = "SELECT id, title, writer, reg_date FROM board ORDER BY id DESC";
                     	pstmt = conn.prepareStatement(sql);
